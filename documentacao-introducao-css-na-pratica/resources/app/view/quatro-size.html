@@ -1,0 +1,23 @@
+<h2 class="item-titulo titulo_desc_move">
+    Size
+</h2>
+<div class="content-area">
+
+<p>Muitas vezes durante a aplicação de um estilo é preciso ajustar o tamanho da imagem para que ela caiba no elemento. A propriedade <span class='lf-badge'>background-size</span> nos permite realizar pequenas modificações na imagem de um elemento para que ela seja redimensionada de acordo com a necessidade do estilo.</p>
+
+<p>Neste exemplo informamos um valor de 16 pixels para a largura da imagem e deixamos que sua altura seja ajustada automaticamente com base nesse valor, preservando assim as suas proporções iniciais:</p>
+<pre><code class="css">div { background-size: 16px auto; }</code></pre>
+
+<p>Podemos ainda utilizar um único valor para <span class='lf-badge'>background-size</span>, mas nesse caso a imagem pode ficar distorcida.</p>
+
+<p>Pode ainda atribuir o valor especial <span class='lf-badge'>contain</span> para <span class='lf-badge'>background-size</span>, que faz com que a imagem ocupe todo o espaço disponível, sem que para isso ela seja cortada ou distorcida:</p>
+
+<pre><code class="css">div { background-size: contain; }</code></pre>
+
+<p>Outro valor especial, cover, é muito utilizado, pois permite escalar a imagem de forma que ela se torna quanto larga quanto o necessário para cobrir todo o espaço interno do elemento. Neste caso, se o elemento tiver dimensões diferentes das da imagem, a mesma será cortada de forma que caiba no elemento sem deixar nenhuma área sem preenchimento visível:</p>
+
+<pre><code class="css">div { background-size: cover; }</code></pre>
+
+<p>Lembre-se que ao redimensionar uma imagem o espaço que não for preenchido por ela no elemento será preenchido por sua cor de fundo.</p>
+
+</div>

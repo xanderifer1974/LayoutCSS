@@ -1,0 +1,34 @@
+<h2 class="item-titulo titulo_desc_move">
+    Imagem
+</h2>
+<div class="content-area">
+
+<p>O CSS nos permite utilizar imagens como plano de fundo de um elemento. Para isso utilizamos a propriedade <span class='lf-badge'>background-image</span>, que pode receber como valor o retorno na função <span class='lf-badge'>url()</span>, para a qual informamos o caminho para a imagem:</p>
+
+<pre><code class="css">div { background-color: yellow; background-image: url(../imagem/plano-de-fundo.jpeg); }</code></pre>
+
+<p>No exemplo acima, o elemento terá o plano de fundo preenchido com a cor amarela e logo após a imagem será aplicada sobre essa cor. Sendo assim, nas áreas de transparência da imagem ou onde ela não for visível, o que veremos será a cor de fundo. Caso a imagem também não seja corretamente carregada, apenas a cor será utilizada como preenchimento.</p>
+
+<p>Caso a imagem utilizada seja menor que o elemento no qual ela foi inserida, o navegador levará em consideração o valor padrão da propriedade <span class='lf-badge'>background-repeat</span>, que costuma ser <span class='lf-badge'>repeat</span> e repetirá a imagem até que ela preencha todo o espaço disponível. </p>
+
+<p>Para anular esse comportamento podemos alterar o valor da propriedade <span class='lf-badge'>background-repeat</span>:</p>
+
+<pre><code class="css">div { background-repeat: no-repeat; }</code></pre>
+
+<p>Neste caso, a imagem não se repetirá. </p>
+
+<p>A propriedade <span class='lf-badge'>background-repeat</span> pode ainda receber os valores <span class='lf-badge'>repeat-x</span>, para que a imagem se repita no eixo x, ou <span class='lf-badge'>repeat-y</span> para que a imagem se repita no eixo y.</p>
+
+<p>Podemos ainda controlar o posicionamento da imagem, utilizando para isso a propriedade <span class='lf-badge'>background-position</span>. Por padrão, uma imagem que não se repete é posicionada no centro e a esquerda do elemento. Com <span class='lf-badge'>background-position</span> podemos determinar o quando essa imagem se deslocará em relação a essa posição inicial:</p>
+
+<pre><code class="css">div { background-position: 10px center; }</code></pre>
+
+<p>No caso acima a imagem se deslocará 10 pixels no eixo x e estará centralizada no eixo y;</p>
+
+<p>Podemos ainda utilizar palavras chave como <span class='lf-badge'>top</span>, <span class='lf-badge'>left</span>, <span class='lf-badge'>bottom</span> e center para determinar esses valores.</p>
+<p>A propriedade background possui ainda uma forma curta de ser escrita e que engloba todas as demais propriedades vistas aqui. Por exemplo, podemos unir todos os valores acima da seguinte forma:</p>
+
+<pre><code class="css">div { background: yellow url(../imagem/plano-de-fundo.jpeg) no-repeat 10px center; }</code></pre>
+
+
+</div>

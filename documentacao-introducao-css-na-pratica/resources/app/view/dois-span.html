@@ -1,0 +1,15 @@
+<h2 class="item-titulo titulo_desc_move">
+    Span
+</h2>
+<div class="content-area">
+
+<p>O estilo aplicado a um texto não pode ser propagado a pequenas porções dentro do mesmo, exceto se utilizarmos um elemento que auxilie nesta tarefa. Por esse motivo, ao estilizar um texto podemos nos valer de <span class='lf-badge'>span</span>, <span class='lf-badge'>strong</span> e outros elementos similares:</p>
+
+<pre><code class="css">&lt;p&gt;Texto <span>em destaque</span> no parágrafo&lt;/p&gt;
+
+p { font-family: “Helvetica Neue”, sans-serif; }
+span { font-family: monospace; background-color: yellow; }</code></pre>
+
+<p>No exemplo acima a regra que utiliza o <span class='lf-badge'>span</span> como seletor será considerada mais específica, uma vez que atribui o estilo diretamente a esse elemento. Como resultado a fonte herdada do parágrafo, helvética, será sobrescrita pela escolhida para o span, uma fonte da família <span class='lf-badge'>monospaced</span>. </p>
+
+</div>

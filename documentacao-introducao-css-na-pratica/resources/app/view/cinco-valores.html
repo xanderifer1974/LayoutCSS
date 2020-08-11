@@ -1,0 +1,96 @@
+<h2 class="item-titulo titulo_desc_move">
+    Valores
+</h2>
+<div class="content-area">
+
+<p>Um vasto conjunto de propriedades pode receber valores numéricos. São exemplos <span class='lf-badge'>width</span>, <span class='lf-badge'>height</span>, <span class='lf-badge'>margin</span>, <span class='lf-badge'>padding</span>, <span class='lf-badge'>border</span> e muitas outras. No CSS temos dois grupos básicos de valores que podem ser utilizados dessa maneira, as unidades de valor absoluto e relativo.</p>
+
+<p>As unidades de comprimento absoluto não recebem influência outros fatores quanto ao cálculo do seu comprimento. Ao utilizá-las, o tamanho final computado corresponde exatamente ao valor declarado.</p>
+
+<p>São exemplos de valores absolutos:</p>
+
+<table border="1">
+
+	<tr>
+		<td>cm</td>
+		<td>centímetros</td>
+	</tr>
+
+	<tr>
+		<td>mm</td>
+		<td>milímetros</td>
+	</tr>
+
+	<tr>
+		<td>in</td>
+		<td>polegadas</td>
+	</tr>
+
+	<tr>
+		<td>px</td>
+		<td>pixels</td>
+	</tr>
+
+	<tr>
+		<td>pt</td>
+		<td>pontos</td>
+	</tr>
+
+	<tr>
+		<td>pc</td>
+		<td>paica</td>
+	</tr>
+</table>
+
+<p>Os unidades de comprimento relativo têm seu comprimento final afetado por outros fatores. Elas são utilizadas quando precisamos escalar as dimensões do elemento.</p>
+
+<p>Por exemplo, se desejamos que um texto dos parágrafos da página tenham 14 pixels, exceto quando estiverem em um determinado container, podemos fazer o seguinte:</p>
+
+<pre><code class="css">html { font-size: 14px; }
+.container { font-size: 2em }</code></pre>
+
+
+<p>Neste exemplo, o texto da página terá uma altura de 14 pixels, contudo quando dentro do elemento de classe container seu tamanho será duas vezes esse valor.</p>
+
+<p>São exemplos de valores relativos:</p>
+
+<table border="1">
+
+	<tr>
+		<td>em</td>
+		<td>1em é uma vez o font-size do elemento</td>
+	</tr>
+
+	<tr>
+		<td>rem</td>
+		<td>1rem é uma vez o font-size do elemento acima na hierarquia de elementos</td>
+	</tr>
+
+	<tr>
+		<td>vw</td>
+		<td>1vw é 1% da largura da janela do navegador</td>
+	</tr>
+
+	<tr>
+		<td>vh</td>
+		<td>1vh é 1% da altura da janela do navegador</td>
+	</tr>
+
+	<tr>
+		<td>vmin</td>
+		<td>1vmax é 1% da menor dimensão da janela do navegador</td>
+	</tr>
+
+	<tr>
+		<td>vmax</td>
+		<td>1vmax é 1% da maior dimensão da janela do navegador</td>
+	</tr>
+
+	<tr>
+		<td>%</td>
+		<td>calcula o tamanho relativo ao elemento pai</td>
+	</tr>
+</table>
+
+
+</div>

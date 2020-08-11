@@ -1,0 +1,55 @@
+<h2 class="item-titulo titulo_desc_move">
+    Cascata
+</h2>
+<div class="content-area">
+
+<p>Sendo o CSS um acrônimo para Folhas de Estilo em Cascasta podemos deduzir que a ordem em que as regras são declaradas é importante para que um elemento seja apresentado corretamente.</p>
+
+
+<p>Considere, por exemplo, que tenhamos as regras abaixo:</p>
+
+
+<pre><code class="css">p { color: blue; }
+p { background-color: red; }</code></pre>
+
+
+<p>No caso acima, o elemento <span class='lf-badge'>p</span> terá a cor de seu texto alterada para azul devido a aplicação da primeira regra e, logo após, sua cor de fundo será alterada para vermelho na aplicação na regra seguinte.</p>
+
+
+<p>Entretanto, considere o cenário a seguir:</p>
+
+
+<pre><code class="css">p { color: blue; }
+p { color: red; }</code></pre>
+
+
+<p>Neste caso, a cor final do elemento será vermelha, pois o valor atribuído à propriedade <span class='lf-badge'>color</span> na declaração da segunda regra sobrescreve o valor da primeira. Isso acontece porque o CSS leva em consideração a ordem na qual as regras foram declaradas no código.</p>
+
+
+<p>Outros fatores também são levados em consideração quando é necessário definir qual será a aparência de um elemento ao qual diferentes estilos foram atribuídos. Em alguns casos, um cálculo pode ser feito para simular esse critério, levando em consideração o seletor utilizado.</p>
+
+
+<ul>
+
+	<li>Se foi utilizado o <span class='lf-badge'>seletor de tipo</span> a regra recebe peso 1.</li>
+
+	<li>Se foi utilizado o <span class='lf-badge'>seletor de classe</span> ou <span class='lf-badge'>atributo</span> a regra recebe peso 10.</li>
+
+	<li>Se foi utilizado o <span class='lf-badge'>seletor de id</span> a regra recebe peso 100.</li>
+</ul>
+
+<p>Combinadores não influenciam nessa decisão.</p>
+
+
+<p>Levando em consideração esse cálculo, considere o seguinte trecho de código:</p>
+
+
+<pre><code class="css">&lt;p class=”classe” id=”identificador”&gt;Texto do parágrafo&lt;/p&gt;
+                      
+.classe { color: blue; }
+ #identificador { color: red;  }</code></pre>
+
+
+<p>Neste caso a cor do parágrafo será vermelho, pois o peso da regra que utiliza o <span class='lf-badge'>seletor de classe</span> é menor em comparação aquela que utiliza o <span class='lf-badge'>seletor de id</span>.</p>
+
+</div>

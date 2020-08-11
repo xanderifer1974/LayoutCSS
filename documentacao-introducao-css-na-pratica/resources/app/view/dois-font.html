@@ -1,0 +1,46 @@
+<h2 class="item-titulo titulo_desc_move">
+    Font	
+</h2>
+<div class="content-area">
+
+<p>Aplicamos uma fonte ao texto de um elemento com a propriedade <span class='lf-badge'>font-family</span>. Essa propriedade permite informar uma lista composta por uma ou mais fontes que, quando forem encontradas pelo navegador no computador do usuário do site, serão utilizadas. Usamos essa propriedade da seguinte forma:</p>
+
+<pre><code class="css">p { font-family: arial; }</code></pre>
+
+<p>A fonte Arial, assim como Courier New, Georgia, Times New Roman, Trebuchet MS e Verdana são consideradas <span class='lf-badge'>Web Safe</span>. Uma vez que o criador do web site não possui total controle sobre as fontes instaladas no computador do usuário, frequentemente decidimos utilizar uma das fontes nesta lista por estarem disponíveis em grande parte dos sistemas operacionais.</p>
+
+<p>No caso de a fonte escolhida pelo desenvolvedor não estar disponível no computador do usuário, o navegador pode decidir utilizar um fonte web safe em seu lugar. Nesse caso, para reduzir a disparidade entre a fonte selecionada e a que decidimos utilizar, podemos informar uma fonte genérica na declaração, como abaixo:</p>
+
+<pre><code class="css">p { font-family: arial, sans-serif; }</code></pre>
+
+<p>Além de sans-serif, serif, monospace, cursive e fantasy também são exemplos de fontes genéricas que podemos utilizar como alternativa caso a fonte informada não seja encontrada no computador do usuário. Algumas literaturas também citam essas como famílias de fontes e indicam na ausência da fonte informada, no caso acima Arial, uma outra fonte da mesma família é utilizada em seu lugar.</p>
+
+<p>Um outro recurso que podemos utilizar é informar mais de uma fonte para que se caso a primeira não seja encontrada, o navegador tente utilizar a próxima, como uma pilha de fontes:</p>
+
+<pre><code class="css">p { font-family: “Trebuchet MS”, Verdana, sans-serif; }</code></pre>
+
+<p>No exemplo acima, primeiro o navegador tentará aplicar Trebuchet MS, recorrendo a Verdana e sans-serif em caso de falha, nesta ordem.</p>
+
+<p>A propriedade <span class='lf-badge'>font-size</span> altera o tamanho do texto. Podemos utilizar diferentes unidades para determinar esse tamanho, sendo <span class='lf-badge'>px</span> e <span class='lf-badge'>em</span> as mais comuns. No exemplo abaixo definimos em pixels qual será o tamanho da fonte:</p>
+
+<pre><code class="css">p { font-size: 16px; }</code></pre>
+
+<p>Quando utilizamos <span class='lf-badge'>em</span> como unidade, o tamanho da fonte utilizada no elemento pai afeta o elemento filho. Vejamos um exemplo:</p>
+
+<pre><code class="css">&lt;p&gt;Texto <span>em destaque</span> no parágrafo&lt;/p&gt;
+
+p { font-size: 16px; }
+span { font-size: 2em; }</code></pre>
+
+<p>No exemplo acima, o parágrafo terá uma altura de 16px, enquanto o span terá 32px no final, pois na maioria dos navegadores 1em corresponde a 100% da fonte utilizada no elemento pai e assim por diante.</p>
+
+<p>Com o CSS podemos ainda alterar o peso de um texto. As mais simples são itálico e negrito. Abaixo temos um exemplo onde aplicamos itálico ao parágrafo com a propriedade <span class='lf-badge'>font-style</span> e negrito ao span com a propriedade <span class='lf-badge'>font-weight</span>:</p>
+
+<pre><code class="css">&lt;p&gt;Texto <span>em destaque</span> no parágrafo&lt;/p&gt;
+
+p { font-style: italic; }
+span { font-weight: bold; }</code></pre>
+
+<p>A propriedade <span class='lf-badge'>font-weight</span> pode ainda receber os valores <span class='lf-badge'>lighter</span> e <span class='lf-badge'>bolder</span> dependendo do grau do peso que desejamos aplicar ao texto. Esse mesmo efeito pode ser obtido utilizando valores de 100 a 900, onde em 100 o texto possui traços mais finos que vão ficando mais pesados ao avançarmos até 900. Em 400, <span class='lf-badge'>font-weight</span> atribui a fonte seu traço padrão.</p>
+
+</div>

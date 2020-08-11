@@ -1,0 +1,28 @@
+<h2 class="item-titulo titulo_desc_move">
+    Introdução
+</h2>
+<div class="content-area">
+
+<p>As propriedades <span class='lf-badge'>width</span> e <span class='lf-badge'>height</span> permitem controlar a altura e largura, como os nomes sugerem, da área de conteúdo de um elemento. Abaixo vemos um exemplo no qual um parágrafo recebe 16 pixels de altura e 20 de largura:</p>
+
+<pre><code class="css">div { height: 16px; width: 20px; display: inline-block; }</code></pre>
+
+<p>Algumas vezes pode ser necessário ter maior controle sobre as dimensões de um elemento, especificando o quanto ele poderá crescer ou se encolher na página. Fazemos isso com as propriedades <span class='lf-badge'>min-width</span>, <span class='lf-badge'>max-width</span>, <span class='lf-badge'>min-height</span> e <span class='lf-badge'>max-height</span>, como no exemplo abaixo:</p>
+
+<pre><code class="css">div { width: 100px; min-width: 80px; }</code></pre>
+
+<p>A forma como o valor dessas propriedades afetam o elemento depende do valor da propriedade <span class='lf-badge'>box-sizing</span>. Essa propriedade define como a altura e largura de um elemento são calculadas. </p>
+
+<p>O valor padrão de <span class='lf-badge'>box-sizing</span> é <span class='lf-badge'>content-box</span>, que define que a largura e altura de um elemento serão definidas pelos valores atribuídos para as propriedades <span class='lf-badge'>height</span> e <span class='lf-badge'>width</span>:</p>
+
+<pre><code class="css">div { height: 16px; width: 20px; padding: 16px; box-sizing: content-box; }</code></pre>
+
+<p>No caso acima, as dimensões finais do elemento serão 32 pixels de altura e 36 pixels de largura, pois os valores das propriedades height, width e padding serão somados quando o motor de renderização apresentar o mesmo.</p>
+
+<p>O segundo valor possível para essa propriedade é <span class='lf-badge'>border-box</span>, que define que a altura e largura de um elemento inclui deve levar em consideração também a sua borda e preenchimento.</p>
+
+<pre><code class="css">div { height: 16px; width: 20px; padding: 16px; box-sizing: border-box; }</code></pre>
+
+<p>Neste caso, uma vez que definimos o padding do elemento como 16 pixels, a altura final do elemento será de 32 pixels, considerando que este valor corresponde a área de preenchimento superior e inferior (16 + 16). Sendo a altura, <span class='lf-badge'>height</span>, de 16 pixels, ela será considerada dentro dos 32 pixels já calculados a partir da área de preenchimento. Isso acontece pois no <span class='lf-badge'>box-sizing</span> o elemento tende a se encolher para se ajustar ao espaço correspondente às suas dimensões. Uma vez que a altura, <span class='lf-badge'>height</span>, do elemento supere os 32 pixels definidos pelo <span class='lf-badge'>padding</span>, por exemplo ao receber 33 pixels, a área de conteúdo do elemento passará a ter 1 pixel e a altura final do elemento passará a ser um pixel maior (33 - 32 = 1). O mesmo se aplica a largura, <span class='lf-badge'>width</span>.</p>
+
+</div>

@@ -1,0 +1,25 @@
+<h2 class="item-titulo titulo_desc_move">
+    Padding
+</h2>
+<div class="content-area">
+
+<p>A propriedade <span class='lf-badge'>padding</span> controla a área de preenchimento de um elemento, que envolve o seu conteúdo. Ela pode receber como valor uma lista de dimensões, como no exemplo abaixo:</p>
+
+<pre><code class="css">div { padding: 16px 10px 20px 30px; }</code></pre>
+
+<p>Neste caso, 16 pixels corresponde a área superior, top, 10 pixels a direita, 20 a área inferior e 30 a esquerda, sendo a distribuição feita como os ponteiros de um relógio.</p>
+
+<p>Podemos ainda escrever essas propriedades de forma curta, sendo isso útil em alguns casos nos quais desejamos atribuir o mesmo valor para a parte superior e inferior de uma elemento, tal qual para sua área de preenchimento esquerda e direita:</p>
+
+<pre><code class="css">div { padding: 16px 10px; }</code></pre>
+
+<p>No exemplo acima, a altura da área de preenchimento do elemento terá 32 pixels (16 + 16), enquanto sua largura será de 20 pixels.</p>
+
+<p>Existem outras formas de escrever os valores dessa propriedade, por exemplo utilizando três valores:</p>
+
+<pre><code class="css">div { padding: 16px 10px 20px; }</code></pre>
+
+<p>Assim, definimos os valores para as áreas superior, esquerda e direita ao mesmo tempo, e inferior. Contudo, alguns navegadores podem ter dificuldades em ler essas sintaxe e, portanto, devemos evitá-la.</p>
+
+<p>Vale lembrar que o valor <span class='lf-badge'>border-box</span>, da propriedade <span class='lf-badge'>box-sizing</span>, influência na forma como <span class='lf-badge'>padding</span> funciona, neste caso empurrando a área de conteúdo do elemento para dentro. Para saber mais sobre isso leia a seção width e height desta documentação.</p>
+</div>

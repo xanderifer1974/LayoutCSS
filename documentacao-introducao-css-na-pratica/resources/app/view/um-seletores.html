@@ -1,0 +1,50 @@
+<h2 class="item-titulo titulo_desc_move">
+    Seletores
+</h2>
+<div class="content-area">
+
+	<p>Como vimos anteriormente, uma regra CSS é composta por seletores e declarações. Enquanto no bloco de declaração definimos qual o estilo de um elemento, é no seletor que indicamos qual ou quais elementos receberão esses estilos.</p>
+
+
+	<p>No CSS podemos utilizar pelo menos três tipos de seletores mais comuns.</p>
+
+
+	<p>O <span class='lf-badge'>seletor universal</span> nos permite atribuir um estilo a todos os elementos presentes em uma página. Ele é representado pelo caractere <span class='lf-badge'>*</span> (asterisco):</p>
+
+
+	<pre><code class="css">* { color: blue; }</code></pre>
+
+
+	<p>Nesta regra, dizemos que todo o texto na página, não importando em qual elemento de texto ele esteja contido, receberá a cor azul.</p>
+
+
+	<p>Com o <span class='lf-badge'>seletor de tipo</span> dizemos que um elemento específico receberá o estilo declarado:</p>
+
+
+	<pre><code class="css">p { color: blue; }</code></pre>
+
+
+	<p>Aqui dizemos que todos os elementos do tipo <span class='lf-badge'>p</span> na página terão sua cor alterada para azul.</p>
+
+
+	<p>Podemos utilizar ainda seletores mais específicos para restringir a aplicação de um determinado estilo. Com o <span class='lf-badge'>seletor de classe</span> dizemos ao navegador que o estilo deve ser aplicado apenas a elementos que contenham a classe especificada. Para isso, como mostra o código a seguir, utilizamos o nome da classe precedido por um <span class='lf-badge'>.</span> (ponto).</p>
+
+
+	<pre><code class="css">.cor-azul { color: blue; }</code></pre>
+
+
+	<p>De igual forma, podemos utilizar também o <span class='lf-badge'>seletor de id</span> para atribuir um estilo a apenas um elemento, visto que o valor desse atributo não deve se repetir na página. Para isso utilizamos o nome do elemento precedido de um <span class='lf-badge'>#</span> (cerquilha).</p>
+
+
+	<pre><code class="css">#cor-azul { color: blue; }</code></pre>
+
+
+	<p>Em alguns casos também podemos utilizar um atributo do elemento como seletor. Para isso utilizamos o <span class='lf-badge'>seletor de atributo</span>, como apresentado abaixo:</p>
+
+
+	<pre><code class="css">[href=”cursos”] { color: blue; }</code></pre>
+
+
+	<p>Com isso, apenas os elementos que tiverem o atributo <span class='lf-badge'>href</span> com o valor cursos serão afetados pela declaração desta regra.</p>
+
+</div>

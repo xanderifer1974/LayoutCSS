@@ -1,0 +1,38 @@
+<h2 class="item-titulo titulo_desc_move">
+    Grupos de seletores e combinadores
+</h2>
+<div class="content-area">
+<p>Até aqui apresentamos como utilizar regras com um seletor. Contudo, algumas vezes pode ser necessário atribuir um mesmo estilo a diferentes elementos. Nesse contexto, podemos agrupar os seletores de uma regra ou utilizar combinadores.</p>
+
+
+<p>No código abaixo, tanto o elemento <span class='lf-badge'>p</span> quanto <span class='lf-badge'>a</span> terão a cor de seu texto alterada para azul:</p>
+
+
+<pre><code class="css">p, a { color: blue; }</code></pre>
+
+
+<p>Note que entre os seletores de tipo, <span class='lf-badge'>p</span> e <span class='lf-badge'>a</span>, utilizamos a vírgula para determinar que o estilo deve ser aplicado a ambos.</p>
+
+
+<p>Os combinadores são utilizados para determinar a relação entre os seletores de uma regra. Um dos mais comuns é chamado <span class='lf-badge'>descendant selector</span>, onde utilizamos um espaço entre os seletores para determinar que o estilo deve ser aplicado se <span class='lf-badge'>a</span> for um descendente de <span class='lf-badge'>p</span>.</p>
+
+
+<pre><code class="css">p a { color: blue; }</code></pre>
+
+
+<p>Nesse caso, <span class='lf-badge'>a</span> receberá a cor azul se estiver contido em um elemento <span class='lf-badge'>p</span>, pois na hierarquia de elementos, <span class='lf-badge'>a</span> é um descendente de <span class='lf-badge'>p</span>. O código HTML abaixo exemplifica o contexto no qual essa regra é aplicada:</p>
+
+
+<pre><code class="xml"><p>Texto do parágrafo seguinte <a style="color: blue; text-decoration: underline;">por um link</a></p></code></pre>
+
+
+<p>Existem ainda outros combinadores, demonstrados na listagem abaixo:</p>
+
+
+<ul><li>O <span class='lf-badge'>child selector</span>, <span class='lf-badge'>p > a</span>, nos permite selecionar um elemento <span class='lf-badge'>a</span> que seja um filho direto de outro elemento <span class='lf-badge'>p</span>.</li><li>
+O <span class='lf-badge'>adjacent sibling selector</span>, <span class='lf-badge'>p + a</span>, seleciona o elemento a após p, desde que os dois estejam no mesmo container.</li><li>
+O <span class='lf-badge'>general sibling selector</span>, <span class='lf-badge'>p ~ a</span>, seleciona qualquer elemento a após p, desde que ambos estejam no mesmo container.</li></ul>
+
+<p>Com exceção do <span class='lf-badge'>descendant selector</span>, os combinadores vêm sendo cada vez menos utilizados, pois dificultam a leitura do código. Um dos motivos para isso é a dificuldade em alterar apenas o HTML da página mantendo o CSS já escrito, uma vez que os combinadores estão vinculados a ordem na qual os elementos foram declarados.</p>
+
+</div>

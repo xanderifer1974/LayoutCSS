@@ -1,0 +1,16 @@
+*******************************************
+Documentação Offline
+*******************************************
+
+Para ler essa documentação offline, extraia o arquivo 
+Após basta abrir a pasta da documentação
+executar o arquivo documentacao-x.exe.
+
+Bons estudos.
+
+****************************************************
+
+Se precisar de ajuda fique a vontade para entrar em contato conosco, através de www.devmedia.com.br/central
+
+Equipe DevMedia
+www.devmedia.com.br
